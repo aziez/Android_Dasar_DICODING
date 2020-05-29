@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hewan AR</string>
+    <string name="detail">Detail Hewan</string>
+    <string name="profile">Profile</string>
+    <string name="profile_pengembang">Profile Pengembang</string>
+    <string name="augmented_reality_hewan">Augmented Reality Hewan</string>
+    <string name="nama_pengembang">Nama Pengembang</string>
+    <string name="muhamad_abdul_aziz">Muhamad Abdul Aziz</string>
+    <string name="email">Email</string>
+    <string name="aziz13_id_gmail_com">Aziz13.id@gmail.com</string>
+</resources>

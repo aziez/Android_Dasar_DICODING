@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_detail_copy">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_marginTop="200dp">
+
+        <LinearLayout
+            android:layout_width="387dp"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_wood"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INI Contoh Nama Hewan"
+            android:textSize="26dp"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textDirection="firstStrong"/>
+            <Button
+                android:id="@+id/btn_Ar"
+                android:background="@drawable/papan_kayu_copy"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AR View"
+                android:textSize="25dp"
+                android:onClick="arBTn"
+                android:layout_toEndOf="@+id/img_item_photo"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_main"
+            android:orientation="horizontal"
+            android:layout_marginTop="110dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="30dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="30dp"
+                android:paddingTop="12dp">
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Beruang (Ursidae) meruapakan salah satu mamalia darat besar yang di temukan di seluruh dunia. Ada delapan spesies yang berbeda dari beruang yang ditemukan di berbagai habitat diantaranya yang ditemukan di utara dan Selatan hemispheres, terutama di benua Amerika, Eropa dan Asia. Kebanyakan beruang aktif di malam hari. Beruang juga termasuk hewan soliter (penyendiri) yang hanya benar-benar berkumpul selama musim kawin saja. Beruang memiliki indera penciuman yang sangat baik dan mereka juga tergolong hewan pemanjat pohon yang fantastis. Mereka juga bisa berenang dengan baik dan dapat berlari pada kecepatan hingga 35 meter perjam untuk jangka waktu yang singkat.
+"
+                    android:textSize="20sp"/>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/bg_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Nama Hewan" />
+
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Beruang (Ursidae) meruapakan salah satu mamalia darat besar yang di temukan di seluruh dunia. Ada delapan spesies yang berbeda dari beruang yang ditemukan di berbagai habitat diantaranya yang ditemukan di utara dan Selatan hemispheres, terutama di benua Amerika, Eropa dan Asia. Kebanyakan beruang aktif di malam hari. Beruang juga termasuk hewan soliter (penyendiri) yang hanya benar-benar berkumpul selama musim kawin saja. Beruang memiliki indera penciuman yang sangat baik dan mereka juga tergolong hewan pemanjat pohon yang fantastis. Mereka juga bisa berenang dengan baik dan dapat berlari pada kecepatan hingga 35 meter perjam untuk jangka waktu yang singkat." />
+    </LinearLayout>
+</RelativeLayout>
